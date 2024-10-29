@@ -24,9 +24,32 @@
           "carbohidratos": 330
         }
       }
+    },
+    {
+      "id": "2cc8",
+      "dataUser": {
+        "nombre": "Ivan",
+        "apellido": "Badoza",
+        "email": "ivanbadoza@gmail.com",
+        "password": "123456",
+        "edad": 29,
+        "peso": 99,
+        "altura": 178,
+        "genero": "masculino",
+        "perfil": "volumen",
+        "nivelActividad": "activo"
+      },
+      "dataUserNutricional": {
+        "tmb": 1962.5,
+        "tdee": 3385.3125,
+        "caloriasObjetivo": 3723.8437500000005,
+        "macronutrientes": {
+          "proteinas": 191,
+          "grasas": 103,
+          "carbohidratos": 508
+        }
+      }
     }
   ],
-  "userMeals": [
-   
-  ]
+  "userMeals": []
 }
