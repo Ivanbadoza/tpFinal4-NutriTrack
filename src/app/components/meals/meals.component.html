@@ -7,6 +7,8 @@
   <ul>
     <li *ngFor="let food of meal.foods">
       {{ food.description }} - Calorías: {{ getCalories(food) }}
+      <button (click)="deleteFoodFromMeal(meal, food)">Eliminar</button> <!-- Botón para eliminar -->
+
     </li>
     <li *ngIf="meal.foods.length === 0">No hay alimentos en esta comida.</li>
   </ul>

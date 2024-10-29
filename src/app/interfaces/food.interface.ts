@@ -11,6 +11,7 @@ export interface Food {
     foodNutrients: Nutrient[]; // Nutrientes del alimento
     selectedMeal?: string; // Identificador de la comida a la que está asociado
     amountInGrams?: number; // Cantidad de alimento en gramos
+    id?:string;//;
 }
 
 // Interfaz para representar una comida

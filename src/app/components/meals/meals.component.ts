@@ -27,4 +27,10 @@ export class MealsComponent implements OnInit {
     const calories = food.foodNutrients?.find(n => n.nutrientName === 'Energy');
     return calories ? calories.value.toString() : 'Nutrient data not available';
   }
+
+   // Método para eliminar un alimento de una comida específica
+   deleteFoodFromMeal(meal: Meal, food: Food): void {
+    this.mealService.deleteFoodFromMeal(meal, food);
+    this.totalCalories = this.mealService.getTotalCalories(); // Actualiza el total de calorías después de eliminar
+  }
 }
